@@ -1,0 +1,62 @@
+[00:00:00.002] (783247d995c0) INFO   Session id: a779c4d52046d2174fc7a47c10fedcec46a3f119714f2734137f9f3c404c52ff
+[00:00:00.249] (783247d995c0) INFO   Sending message: keepalive
+[00:00:00.251] (783247d995c0) INFO   Received message: keepalive
+[00:00:20.249] (783247d995c0) INFO   Sending message: keepalive
+[00:00:20.250] (783247d995c0) INFO   Received message: keepalive
+[00:00:40.249] (783247d995c0) INFO   Sending message: keepalive
+[00:00:40.250] (783247d995c0) INFO   Received message: keepalive
+[00:01:00.249] (783247d995c0) INFO   Sending message: keepalive
+[00:01:00.254] (783247d995c0) INFO   Received message: keepalive
+[00:01:20.250] (783247d995c0) INFO   Sending message: keepalive
+[00:01:20.251] (783247d995c0) INFO   Received message: keepalive
+[00:01:36.166] (783247d995c0) INFO   Received message: {"data": {"action": "command", "command": "cd /workspaces/ServerWitch-API/majinboo && huggingface-cli login --token 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"}, "request_id": "ad48a9c6-0dcc-4d87-a897-d229cb4d11aa"}
+[00:01:36.169] (783247d995c0) INFO   Sending message: {"data":{"return_code":127,"stdout":"","stderr":"/bin/bash: huggingface-cli: command not found\n"},"error":false,"request_id":"ad48a9c6-0dcc-4d87-a897-d229cb4d11aa"}
+[00:01:40.250] (783247d995c0) INFO   Sending message: keepalive
+[00:01:40.251] (783247d995c0) INFO   Received message: keepalive
+[00:02:00.250] (783247d995c0) INFO   Sending message: keepalive
+[00:02:00.251] (783247d995c0) INFO   Received message: keepalive
+[00:02:00.453] (783247d995c0) INFO   Received message: {"data": {"action": "command", "command": "pip install huggingface_hub"}, "request_id": "d61c2136-20ce-4e62-ac3a-7b9d35f0b53f"}
+[00:02:08.211] (783247d995c0) INFO   Sending message: {"data":{"return_code":0,"stdout":"Collecting huggingface_hub\n  Downloading huggingface_hub-0.23.4-py3-none-any.whl.metadata (12 kB)\nRequirement already satisfied: filelock in /home/codespace/.local/lib/python3.10/site-packages (from huggingface_hub) (3.14.0)\nRequirement already satisfied: fsspec>=2023.5.0 in /home/codespace/.local/lib/python3.10/site-packages (from huggingface_hub) (2024.5.0)\nRequirement already satisfied: packaging>=20.9 in /home/codespace/.local/lib/python3.10/site-packages (from huggingface_hub) (24.0)\nRequirement already satisfied: pyyaml>=5.1 in /home/codespace/.local/lib/python3.10/site-packages (from huggingface_hub) (6.0.1)\nRequirement already satisfied: requests in /home/codespace/.local/lib/python3.10/site-packages (from huggingface_hub) (2.32.3)\nCollecting tqdm>=4.42.1 (from huggingface_hub)\n  Downloading tqdm-4.66.4-py3-none-any.whl.metadata (57 kB)\n     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.6/57.6 kB 1.4 MB/s eta 0:00:00\nRequirement already satisfied: typing-extensions>=3.7.4.3 in /home/codespace/.local/lib/python3.10/site-packages (from huggingface_hub) (4.12.0)\nRequirement already satisfied: charset-normalizer<4,>=2 in /home/codespace/.local/lib/python3.10/site-packages (from requests->huggingface_hub) (3.3.2)\nRequirement already satisfied: idna<4,>=2.5 in /home/codespace/.local/lib/python3.10/site-packages (from requests->huggingface_hub) (3.7)\nRequirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/python/3.10.13/lib/python3.10/site-packages (from requests->huggingface_hub) (2.0.7)\nRequirement already satisfied: certifi>=2017.4.17 in /home/codespace/.local/lib/python3.10/site-packages (from requests->huggingface_hub) (2024.2.2)\nDownloading huggingface_hub-0.23.4-py3-none-any.whl (402 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 402.6/402.6 kB 7.3 MB/s eta 0:00:00\nDownloading tqdm-4.66.4-py3-none-any.whl (78 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 2.3 MB/s eta 0:00:00\nInstalling collected packages: tqdm, huggingface_hub\nSuccessfully installed huggingface_hub-0.23.4 tqdm-4.66.4\n","stderr":"\n[notice] A new release of pip is available: 24.0 -> 24.1.1\n[notice] To update, run: python3 -m pip install --upgrade pip\n"},"error":false,"request_id":"d61c2136-20ce-4e62-ac3a-7b9d35f0b53f"}
+[00:02:20.249] (783247d995c0) INFO   Sending message: keepalive
+[00:02:20.251] (783247d995c0) INFO   Received message: keepalive
+[00:02:34.428] (783247d995c0) INFO   Received message: {"data": {"action": "command", "command": "cd /workspaces/ServerWitch-API/majinboo && huggingface-cli login --token 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"}, "request_id": "e77966d7-556b-49fa-b525-3bfb1ecee451"}
+[00:02:35.047] (783247d995c0) INFO   Sending message: {"data":{"return_code":0,"stdout":"The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.\nToken is valid (permission: write).\nYour token has been saved to /home/codespace/.cache/huggingface/token\nLogin successful\n","stderr":""},"error":false,"request_id":"e77966d7-556b-49fa-b525-3bfb1ecee451"}
+[00:02:40.250] (783247d995c0) INFO   Sending message: keepalive
+[00:02:40.251] (783247d995c0) INFO   Received message: keepalive
+[00:02:44.727] (783247d995c0) INFO   Received message: {"data": {"action": "command", "command": "huggingface-cli repo create spaces/jortiz/majinboo --type=space"}, "request_id": "4bf9be45-6510-4bb9-b6de-dc350dc94212"}
+[00:02:45.103] (783247d995c0) INFO   Sending message: {"data":{"return_code":1,"stdout":"\u001b[90mgit version 2.45.1\u001b[0m\n\u001b[90mgit-lfs/3.5.1 (GitHub; linux amd64; go 1.21.8)\u001b[0m\n\nYou are about to create \u001b[1mspaces/jortiz/spaces/jortiz/majinboo\u001b[0m\nProceed? [Y/n] ","stderr":"Traceback (most recent call last):\n  File \"/home/codespace/.python/current/bin/huggingface-cli\", line 8, in <module>\n    sys.exit(main())\n  File \"/usr/local/python/3.10.13/lib/python3.10/site-packages/huggingface_hub/commands/huggingface_cli.py\", line 51, in main\n    service.run()\n  File \"/usr/local/python/3.10.13/lib/python3.10/site-packages/huggingface_hub/commands/user.py\", line 169, in run\n    choice = input(\"Proceed? [Y/n] \").lower()\nEOFError: EOF when reading a line\n"},"error":false,"request_id":"4bf9be45-6510-4bb9-b6de-dc350dc94212"}
+[00:03:00.249] (783247d995c0) INFO   Sending message: keepalive
+[00:03:00.250] (783247d995c0) INFO   Received message: keepalive
+[00:03:05.070] (783247d995c0) INFO   Received message: {"data": {"action": "command", "command": "huggingface-cli repo create spaces/jortiz/majinboo --type=space --yes"}, "request_id": "ba310d47-e0ab-4149-b527-16794936f173"}
+[00:03:05.466] (783247d995c0) INFO   Sending message: {"data":{"return_code":1,"stdout":"\u001b[90mgit version 2.45.1\u001b[0m\n\u001b[90mgit-lfs/3.5.1 (GitHub; linux amd64; go 1.21.8)\u001b[0m\n\nYou are about to create \u001b[1mspaces/jortiz/spaces/jortiz/majinboo\u001b[0m\n","stderr":"Traceback (most recent call last):\n  File \"/home/codespace/.python/current/bin/huggingface-cli\", line 8, in <module>\n    sys.exit(main())\n  File \"/usr/local/python/3.10.13/lib/python3.10/site-packages/huggingface_hub/commands/huggingface_cli.py\", line 51, in main\n    service.run()\n  File \"/usr/local/python/3.10.13/lib/python3.10/site-packages/huggingface_hub/commands/user.py\", line 174, in run\n    url = self._api.create_repo(\n  File \"/usr/local/python/3.10.13/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py\", line 106, in _inner_fn\n    validate_repo_id(arg_value)\n  File \"/usr/local/python/3.10.13/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py\", line 154, in validate_repo_id\n    raise HFValidationError(\nhuggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'jortiz/spaces/jortiz/majinboo'. Use `repo_type` argument if needed.\n"},"error":false,"request_id":"ba310d47-e0ab-4149-b527-16794936f173"}
+[00:03:20.250] (783247d995c0) INFO   Sending message: keepalive
+[00:03:20.251] (783247d995c0) INFO   Received message: keepalive
+[00:03:40.249] (783247d995c0) INFO   Sending message: keepalive
+[00:03:40.250] (783247d995c0) INFO   Received message: keepalive
+[00:03:48.151] (783247d995c0) INFO   Received message: {"data": {"action": "command", "command": "huggingface-cli repo upload --repo-id spaces/jortiz/majinboo --path /workspaces/ServerWitch-API/majinboo"}, "request_id": "e368b924-b0d8-4fd9-af04-e2d94be3f958"}
+[00:03:48.462] (783247d995c0) INFO   Sending message: {"data":{"return_code":2,"stdout":"","stderr":"usage: huggingface-cli <command> [<args>] repo [-h] {create} ...\nhuggingface-cli <command> [<args>] repo: error: argument {create}: invalid choice: 'upload' (choose from 'create')\n"},"error":false,"request_id":"e368b924-b0d8-4fd9-af04-e2d94be3f958"}
+[00:04:00.250] (783247d995c0) INFO   Sending message: keepalive
+[00:04:00.252] (783247d995c0) INFO   Received message: keepalive
+[00:04:14.911] (783247d995c0) INFO   Received message: {"data": {"action": "command", "command": "cd /workspaces/ServerWitch-API/majinboo && git config --global user.email \"you@example.com\" && git config --global user.name \"Your Name\" && git add . && git commit -m \"Deploying ServerWitch API\" && git push origin main"}, "request_id": "d000d0cc-8b1f-4036-a7e5-3a4ae411f476"}
+[00:04:14.923] (783247d995c0) INFO   Sending message: {"data":{"return_code":1,"stdout":"On branch main\nYour branch is up to date with 'origin/main'.\n\nnothing to commit, working tree clean\n","stderr":""},"error":false,"request_id":"d000d0cc-8b1f-4036-a7e5-3a4ae411f476"}
+[00:04:20.249] (783247d995c0) INFO   Sending message: keepalive
+[00:04:20.250] (783247d995c0) INFO   Received message: keepalive
+[00:04:40.249] (783247d995c0) INFO   Sending message: keepalive
+[00:04:40.250] (783247d995c0) INFO   Received message: keepalive
+[00:05:00.249] (783247d995c0) INFO   Sending message: keepalive
+[00:05:00.250] (783247d995c0) INFO   Received message: keepalive
+[00:05:20.249] (783247d995c0) INFO   Sending message: keepalive
+[00:05:20.250] (783247d995c0) INFO   Received message: keepalive
+[00:05:40.249] (783247d995c0) INFO   Sending message: keepalive
+[00:05:40.250] (783247d995c0) INFO   Received message: keepalive
+[00:06:00.249] (783247d995c0) INFO   Sending message: keepalive
+[00:06:00.250] (783247d995c0) INFO   Received message: keepalive
+[00:06:00.880] (783247d995c0) INFO   Received message: {"data": {"action": "command", "command": "cat /workspaces/ServerWitch-API/Dockerfile"}, "request_id": "b535a539-7d05-493b-b119-efd38fd5ac5e"}
+[00:06:00.884] (783247d995c0) INFO   Sending message: {"data":{"return_code":0,"stdout":"# Builder image\nFROM python:3.11.5-slim-bookworm as builder\n\n# Install poetry\nRUN pip install poetry\n\n# Copy source\nRUN mkdir -p /app\nCOPY pyproject.toml poetry.toml README.md hypercorn.toml logging.toml /app/\nCOPY src/ /app/src/\n\n# Build project\nWORKDIR /app\nRUN poetry install\n\n# Base image\nFROM python:3.11.5-slim-bookworm as base\n\nRUN mkdir -p /var/log/serverwitch\nCOPY --from=builder /app /app\n\nWORKDIR /app\nENV PATH=\"/app/.venv/bin/:$PATH\"\nCMD [\"hypercorn\", \"--config\", \"hypercorn.toml\", \"serverwitch_api:app\"]\n\nEXPOSE 8000\n","stderr":""},"error":false,"request_id":"b535a539-7d05-493b-b119-efd38fd5ac5e"}
+[00:06:20.249] (783247d995c0) INFO   Sending message: keepalive
+[00:06:20.251] (783247d995c0) INFO   Received message: keepalive
+[00:06:21.525] (783247d995c0) INFO   Received message: {"data": {"action": "command", "command": "cp -r /workspaces/ServerWitch-API/* /workspaces/ServerWitch-API/majinboo/"}, "request_id": "2ba745e1-fe95-4038-8037-b63a7b3f7479"}
+[00:06:33.276] (783247d995c0) INFO   Sending message: {"data":{"return_code":1,"stdout":"","stderr":"cp: cannot copy a directory, '/workspaces/ServerWitch-API/majinboo', into itself, '/workspaces/ServerWitch-API/majinboo/majinboo'\n"},"error":false,"request_id":"2ba745e1-fe95-4038-8037-b63a7b3f7479"}
+[00:06:40.249] (783247d995c0) INFO   Sending message: keepalive
+[00:06:40.250] (783247d995c0) INFO   Received message: keepalive
+[00:06:52.969] (783247d995c0) INFO   Received message: {"data": {"action": "command", "command": "rsync -av --progress /workspaces/ServerWitch-API/ /workspaces/ServerWitch-API/majinboo/ --exclude /workspaces/ServerWitch-API/majinboo"}, "request_id": "b4d45c31-ef0d-45fb-ada3-154950711329"}
