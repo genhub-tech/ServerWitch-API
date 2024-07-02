@@ -1,26 +1,30 @@
-services:
-  serverwitch-api:
-    build: .
-    container_name: serverwitch-api
-    expose:
-      - "8000"
-    volumes:
-      - ./volumes/serverwitch/log:/var/log/serverwitch
+version: '3'
 
+services:
   nginx:
-    build:
-      context: ./nginx
-      args:
-        DOMAIN: ${DOMAIN_NAME:?Err DOMAIN_NAME is required}
-        EMAIL: ${EMAIL_ADDRESS:?Err EMAIL_ADDRESS is required}
-    container_name: nginx_proxy
+    image: nginx:latest
+    container_name: nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
     ports:
       - "80:80"
       - "443:443"
     depends_on:
       - serverwitch-api
+
+  serverwitch-api:
+    build:
+      context: .
+    container_name: serverwitch-api
+    ports:
+      - "8000:8000"
     volumes:
-      - ./volumes/nginx/log:/var/log/nginx
-      - ./volumes/nginx/letsencrypt:/etc/letsencrypt
-      - ./volumes/nginx/certbot:/var/www/certbot
-      - ./volumes/nginx/ssl-options:/etc/ssl-options/
+      - .:/app
+
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
