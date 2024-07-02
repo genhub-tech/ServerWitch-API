@@ -23,4 +23,4 @@ WORKDIR /app
 ENV PATH="/app/.venv/bin/:$PATH"
 CMD ["hypercorn", "--config", "hypercorn.toml", "serverwitch_api:app"]
 
-EXPOSE 8000
+EXPOSE 7860
